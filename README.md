@@ -1,2 +1,2 @@
 # reorganize-string
-leetcode 767. Reorganize String with tests
+leetcode 767. Reorganize String with benchmarks
