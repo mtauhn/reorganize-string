@@ -10,3 +10,17 @@ func BenchmarkReorganizeString(b *testing.B) {
 		_ = r
 	}
 }
+
+func BenchmarkReorganizeStringSlice(b *testing.B) {
+	for i := 0; i < b.N; i++ {
+		r := ReorganizeStringSlice(QueryString)
+		_ = r
+	}
+}
+
+func BenchmarkReorganizeStringVer3(b *testing.B) {
+	for i := 0; i < b.N; i++ {
+		r := reorganizeStringVer3(QueryString)
+		_ = r
+	}
+}
