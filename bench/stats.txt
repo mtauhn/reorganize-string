@@ -1,0 +1,9 @@
+goos: darwin
+goarch: amd64
+pkg: reorganize-string/bench
+cpu: Intel(R) Core(TM) i9-9980HK CPU @ 2.40GHz
+BenchmarkReorganizeString-16         	  100000	      4103 ns/op	    1703 B/op	      33 allocs/op
+BenchmarkReorganizeStringSlice-16    	  100000	      7383 ns/op	    4620 B/op	     134 allocs/op
+BenchmarkReorganizeStringVer3-16     	  100000	      6869 ns/op	    5143 B/op	     132 allocs/op
+PASS
+ok  	reorganize-string/bench	2.148s
